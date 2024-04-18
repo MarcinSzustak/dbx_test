@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pyspark-project-template"
+version = "0.1.0"
+description = "template for python projects"
+authors = ["Your Name <your.name@datumo.pl>"]
+
+[tool.poetry.dependencies]
+python = "<3.11" # Python 3.11 is not supported by Spark 3.3.1
+pre-commit = "^2.20.0"
+pytest = "^7.2.0"
+pyspark = "^3.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
